@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout';
-import { Dashboard, Creators, CreatorProfile, UploadData, Settings } from './pages';
+import { Dashboard, Creators, CreatorProfile, UploadData, Settings, Contact } from './pages';
 
 export default function App() {
   return (
@@ -11,6 +11,7 @@ export default function App() {
         <Route path="/creators/:id" element={<CreatorProfile />} />
         <Route path="/upload" element={<UploadData />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Layout>
   );
